@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/lf_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="32dp"
+    tools:context="com.LF_Activity">
+
+    <EditText
+        android:id="@+id/speedValue"
+        android:layout_width="280dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:hint="@string/enter_value_of_speed_in_m_s"
+        android:inputType="numberDecimal" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/show_lf"
+        app:layout_constraintTop_toBottomOf="@id/speedValue"
+        android:layout_marginTop="30dp"
+        android:text="@string/show_result"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/check_lf"
+        app:layout_constraintTop_toBottomOf="@id/show_lf"
+        android:layout_marginTop="10dp"
+        android:text="@string/check_your_result"/>
+
+    <TextView
+        android:id="@+id/lf_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/check_lf"
+        tools:text="@string/lorentz_factor"
+        android:textSize="24sp"
+        android:textColor="@color/design_default_color_on_secondary"/>
+
+    <EditText
+        android:id="@+id/user_result"
+        android:layout_width="280dp"
+        android:layout_height="55dp"
+        android:hint="@string/enter_your_lorentz_factor"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lf_value" />
+
+    <Button
+        android:id="@+id/check"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="100dp"
+        android:text="@string/check"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/user_result" />
+    <TextView
+        android:id="@+id/lf_value2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginEnd="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/user_result"
+        tools:text="@string/lorentz_factor"
+        android:textSize="24sp"
+        android:textColor="@color/design_default_color_on_secondary"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/reset"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="@string/reset"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

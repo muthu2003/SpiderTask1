@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Spider Task</string>
+    <string name="lorentz_factor">Lorentz Factor</string>
+    <string name="spi_factor">Spi Factor</string>
+    <string name="enter_value_of_speed_in_m_s">Enter Value of Speed in (m/s)</string>
+    <string name="show_result">Show Result</string>
+    <string name="check_your_result">Check your result</string>
+    <string name="enter_your_lorentz_factor">Enter your Lorentz Factor</string>
+    <string name="check">Check</string>
+    <string name="reset">Reset</string>
+</resources>
